@@ -1,0 +1,330 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Gidole Regular";
+    scroll-behavior: smooth;
+}
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* nav {
+    position: float;
+    background: #37474F;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } */
+  /* Only stick if you can fit */
+  /* @media (min-height: 300px) {
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
+  }
+  nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  nav ul li a.current {
+    background: black;
+  } */
+
+
+.container1 {
+
+    position: relative;
+    top: inherit;
+    background-color: antiquewhite;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: black;
+    font-family: "Gidole";
+    font-size: 17px;
+}
+
+.container2 {
+    
+    position: relative;
+    top: inherit;
+    background: white;
+    line-height: 30px;
+    font-weight: lighter;
+    /* padding: 40px; */
+    color: black;
+    font-family: "Gidole";
+    font-size: 17px;
+}
+.container3 {
+    
+    position: relative;
+    top: inherit;
+    background-color: rgba(0, 0, 0, 0.774);
+    line-height: 30px;
+    font-weight: lighter;
+    /* padding: 40px; */
+    color: white;
+    font-family: "Gidole";
+    font-size: 17px;
+}
+.container4 {
+    
+    position: relative;
+    top: inherit;
+    background-color: antiquewhite;
+    line-height: 30px;
+    font-weight: lighter;
+    /* padding: 40px; */
+    color: black;
+    font-family: "Gidole";
+    font-size: 17px;
+}
+
+.projects {
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s; */
+    border-radius: 5px; 
+    width: 20%;
+    padding-left: 400px;
+}
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+.projects img {
+    border-radius: 5px 5px 0 0;
+    display: block;
+    
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: darkcyan;
+    
+}
+  
+.projects:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2 {
+    font-family: "Roboto";
+    font-size: 40px;
+    color: darkcyan;
+    text-align: center;
+    letter-spacing: -1px; 
+}
+hr {
+    width: 800px;
+    background-color: grey;
+    height: 0.2px;
+    border: none;
+}
+#last-line {
+    width: 800px;
+    background-color: white;
+    height: 0.2px;
+    border: none;
+}
+#quote {
+    font-family: "Lato";
+    font-weight: lighter;
+    font-size: 20px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    
+}
+
+h1 span { 
+    color: white; 
+    /* font: bold 24px/45px;  */
+    font-family: "Glacial Indifference";
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -1px;  
+     
+ }
+/* #style1 {
+     border-radius: 5px;
+     border: 0;
+     height: 0;
+     border-top: 1px solid rgba(0, 0, 0, 0.1);
+     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+} */
+
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* position: relative;
+        width: 100%; */
+    }
+
+    /* .info1 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .info2 {
+        grid-column: span 2;
+    } */
+    .figure1 {
+        grid-column: span 3;
+       
+    }
+    .figure2 {
+        grid-column: span 2;
+        grid-column: span 2;
+    }
+    .figure5 {
+        grid-column: span 1;
+        grid-row: 2;
+    }
+    /* .figure4 {
+        grid-: span 3;
+    } */
+    .figure6 {
+        grid-column: span 2;
+      
+    }
+    .figure3 {
+        grid-column: span 1;
+    }
+    .figure8 {
+        grid-column: span 3;
+        
+    }
+    .figure7 {
+        grid-column: span 2;
+       
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+        /* display: block; */
+    }
+    .figure-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* .info1, .info2 {
+        padding: 40px;
+        background-color: #292727;
+        color: #fff;
+    } */
+    img {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        /* -webkit-filter: blur(5px)  grayscale(20%); 
+        filter: blur(5px)  grayscale(20%); */
+       
+      }
+    :hover{
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        /* -webkit-filter: blur(0px); 
+        filter: blur(0px); */
+    }
+}
+.icons {
+    /* margin-left: 80px; */
+    text-align: center;
+    text-decoration: none;
+}
+.icons a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+ 
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px;
+    grid-template-areas: "image" "text";
+  
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: Roboto;
+    text-align: center;
+    width: 17.8%;
+    margin-left: 50px;
+    
+  }
+  .card-image {
+    grid-area: image;
+  }
+  .card-text {
+    grid-area: text;
+    font-size: 15px;
+
+  }
+  .card-image {
+    grid-area: image;
+    background: url("unsplash2.jpg");
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+  }
